@@ -5,7 +5,7 @@ Blog post
 *We will (1) show why strings leak, (2) survey three obfuscation tactics, (3) build a C++17 header-only library that encrypts strings at compile-time and wipes them at run-time.*
 
 
-**TL;DR: we hide strings by encrypting them at compile-time with a constexpr XOR + LCG, then wipe the plaintext from the stack when it goes out of scope. Full source is a single C++17 header. [Code available here]()**
+**TL;DR: we hide strings by encrypting them at compile-time with a constexpr XOR + LCG, then wipe the plaintext from the stack when it goes out of scope. Full source is a single C++17 header. [Code available here](https://github.com/serexp/blog-posts/blob/main/src/xorlcg_stringobf.hpp)**
 
 Anti-viruses and Endpoint Detection and Response products rely on static analysis to analyze potentially malicious apps statically, i.e: without running them. This is different from dynamic analysis, where executables will be run and analyzed live as they execute.
 
